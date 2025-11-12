@@ -17,7 +17,7 @@
 
 html {
   font-size: 60%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -127,10 +127,6 @@ span {
   background-clip: text;
   color: transparent;
   transition: 0.3s ease-in-out;
-}
-
-.university:hover {
-  transform: scale(1.02);
 }
 
 section {
@@ -438,16 +434,12 @@ footer ul li a:hover {
   border-bottom: 3px solid var(--main-color);
 }
 
-::-webkit-scrollbar {
-  width: 20px; 
+::view-transition-old(root), ::view-transition-new(root) {
+  animation-duration: 0.35s;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--bg-color);
+section[hidden] { 
+  display: none !important; 
 }
 
 @media(max-width:1285px) {
