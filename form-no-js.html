@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Without JS</title>
+    <link rel="stylesheet" href="form-no-js.css">
+</head>
+<body>
+
+    <section id="contact">
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Contact <span>Me</span></legend>
+
+          <form-field>
+            <label for="fullName">Full Name: </label>
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" autocomplete="name" aria-describedby="fullName-error fullName-info" required>
+            <output class="error" id="fullName-error" for="fullName" aria-live="polite"></output>
+            <output class="info" id="fullName-info" for="fullName" aria-live="polite"></output>
+          </form-field>
+
+          <form-field>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" required autocomplete="email" aria-describedby="email-error email-info">
+            <output class="error" id="email-error" for="email" aria-live="polite"></output>
+            <output class="info" id="email-info" for="email" aria-live="polite"></output>
+          </form-field>
+
+          <form-field>
+            <label for="comments">Comments: </label>
+            <textarea name="comments" id="comments" placeholder="Your Comments" required aria-describedby="comments-error comments-info"></textarea>
+            <output class="error" id="comments-error" for="comments" aria-live="polite"></output>
+            <output class="info" id="comments-info" for="comments" aria-live="polite"></output>
+          </form-field>
+
+          <input type="hidden" name="possible_bot" value="true">
+          <button type="submit">Send Message</button>
+        </fieldset>
+        <output></output>
+        <output></output>
+      </form>
+    </section>
+</body>
+</html>
