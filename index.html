@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/spacecraft.ico" type="image/x-icon">
   <script src="index.js"></script>
+  <script src="project-card.js" defer></script>
 </head>
 
 <body>
@@ -72,7 +73,7 @@
       <article class="experience-container">
         <div class="experience-box">
           <div class="experience-info">
-            <i>AV</i>
+            <i>AeroVironment</i>
             <h4>Software Engineer Intern</h4>
             <p>Contributed to system development on Linux, collaborating 
               closely with engineers to debug, validate, and improve 
@@ -87,39 +88,25 @@
       <h2 class="heading">Projects</h2>
 
       <article class="projects-box">
-        <div class="project-card">
-          <img src="images/chat_project.png" alt="Chat Server Project">
-          <h3>Chat Server</h3>
-          <p>
-            Developed a high-performance chat server in C 
-            with custom TCP/IP sockets and persistent storage 
-            optimized for concurrent requests.
-          </p>
-          <ul class="project-skills">
-            <li class="skill-item">C/C++</li>
-            <li class="skill-item">GDB</li>
-            <li class="skill-item">Vim</li>
-            <li class="skill-item">Systems Programming</li>
-          </ul>
-        </div>
 
-        <div class="project-card">
-          <img src="images/stock-app.png" alt="Dashboard of Stock Portfolio Project">
-          <h3>Stock Portfolio Project</h3>
-          <p>
-            Built a comprehensive MERN stack app that seamlessly 
-            combined dynamic stock searches, secure authentication, 
-            and real-time data visualization.
-          </p>
-          <ul class="project-skills">
-            <li class="skill-item">JavaScript</li>
-            <li class="skill-item">React</li>
-            <li class="skill-item">MongoDB</li>
-            <li class="skill-item">Express</li>
-            <li class="skill-item">Node</li>
-            <li class="skill-item">Tailwind</li>
-          </ul>
-        </div>
+        <project-card
+        title="Chat Server"
+        img="images/chat_project.png"
+        alt="Chat Server Project"
+        desc="Developed a high-performance chat server in C with custom TCP/IP sockets and persistent storage optimized for concurrent requests."
+        skills="C/C++,GDB,Vim,Systems Programming"
+        link="https://github.com/coderfreeze?tab=repositories"
+        ></project-card>
+
+        <project-card
+        title="Stock Portfolio Project"
+        img="images/stock-app.png"
+        alt="Dashboard of Stock Portfolio Project"
+        desc="Built a comprehensive MERN stack app that seamlessly combined dynamic stock searches, secure authentication, and real-time data visualization."
+        skills="JavaScript,React,MongoDB,Express,Node,Tailwind"
+        link = "https://github.com/coderfreeze/stock-portfolio-manager-app"
+        ></project-card>
+
       </article>
     </section>
 
