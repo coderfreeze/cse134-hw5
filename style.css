@@ -17,7 +17,6 @@
 
 html {
   font-size: 60%;
-  overflow: hidden;
 }
 
 body {
@@ -434,12 +433,16 @@ footer ul li a:hover {
   border-bottom: 3px solid var(--main-color);
 }
 
-::view-transition-old(root), ::view-transition-new(root) {
-  animation-duration: 0.35s;
+::-webkit-scrollbar {
+  width: 20px; 
 }
 
-section[hidden] { 
-  display: none !important; 
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
 }
 
 @media(max-width:1285px) {
